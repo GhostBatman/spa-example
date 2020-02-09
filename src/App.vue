@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <index-component />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import IndexComponent from './components/IndexComponent'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    IndexComponent
   }
 }
 </script>
@@ -24,5 +23,25 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: left!important;
+}
+
+th:nth-child(1) {
+  width: 35%;
+}
+th:nth-child(2) {
+  width: 35%;
+}
+th:nth-child(3) {
+  width: 30%;
 }
 </style>
